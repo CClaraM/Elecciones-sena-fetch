@@ -77,7 +77,6 @@ if (localStorage.getItem("elecciones") === null) {
         .then(response => response.json())
         .then(data => {
             lista = data;
-            //mostrarCandidatos(lista);
         }).catch(error => console.error('Error al cargar los datos:', error));
 
         if (localStorage.getItem("validador") === null || localStorage.getItem("validador") === "false") {
