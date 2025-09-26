@@ -60,7 +60,7 @@ function mostrarCandidatos(candidatos) {
     });
 }
 
-if (localStorage.getItem("elecciones") === null) {
+if (localStorage.getItem("elecciones") === null || localStorage.getItem("elecciones") === "false") {
         console.log("No hay elecciones en curso");
         let html = '';
         html += `<div class="alert alert-info" role="alert">
