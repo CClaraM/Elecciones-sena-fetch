@@ -69,7 +69,7 @@ if (localStorage.getItem("elecciones") === null || localStorage.getItem("eleccio
             <hr>
             <p class="mb-0">Por favor, espere a que las elecciones inicien para realizar estas acciones.</p>
         </div>`;
-        document.querySelector('#candidatos').innerHTML = html;
+        document.querySelector('#confirm').innerHTML = html;
     } else {
         console.log("Elecciones en curso");
         // Cargar los datos de los candidatos desde el archivo JSON
