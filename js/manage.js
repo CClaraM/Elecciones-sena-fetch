@@ -97,6 +97,10 @@ function iniciarMonitoreoResultados() {
   }
 }
 
+document.querySelector("#btnVotacion").addEventListener("click", () => {
+    window.open("index.html", "_blank"); // Abre en una nueva pestaña
+});
+
 document.querySelector("#btnLogout").addEventListener("click", () => {
     swal.fire({
         title: "Desea cerrar cesión?",
